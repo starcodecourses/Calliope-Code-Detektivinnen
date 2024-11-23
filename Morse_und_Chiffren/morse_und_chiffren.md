@@ -79,7 +79,7 @@ Die Sendeleistung kann ebenfalls beliebig gewählt werden. Allerdings gilt:
 Setzt den folgenden Text im Calliope-Board um.
 
 _Wenn_ **Knopf A geklickt** wurde, sollen die kurzen Signale über Funk gesendet werden.
-Dafür wollen wir _erst_ die **Zahl 0** über Funk senden und anschließend dieses Muster auf den LEDs zeigen: 
+Dafür wollen wir _erst_ die **Zahl 0** über Funk senden und anschließend dieses Muster auf den LEDs zeigen:\ 
 ![Kurzes Signal](/Morse_und_Chiffren/figures/kurz.png)\
 Damit wir überprüfen können, ob unsere Eingabe auch wirklich geklappt hat, wollen wir unsere Eingabe mit einem **Ton hinterlegen**, der für **1/8 Schläge** hält.
 Um nicht dauerhaft nur den Punkt auf den LEDs zu sehen, müssen wir ganz zum Schluss den Bildschriminhalt **löschen**.
