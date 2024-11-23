@@ -80,7 +80,7 @@ Setzt den folgenden Text im Calliope-Board um.
 
 _Wenn_ **Knopf A geklickt** wurde, sollen die kurzen Signale über Funk gesendet werden.
 Dafür wollen wir _erst_ die **Zahl 0** über Funk senden und anschließend dieses Muster auf den LEDs zeigen: 
-![Kurzes Signal](/Morse_und_Chiffren/figures/kurz.png)
+![Kurzes Signal](/Morse_und_Chiffren/figures/kurz.png)\
 Damit wir überprüfen können, ob unsere Eingabe auch wirklich geklappt hat, wollen wir unsere Eingabe mit einem **Ton hinterlegen**, der für **1/8 Schläge** hält.
 Um nicht dauerhaft nur den Punkt auf den LEDs zu sehen, müssen wir ganz zum Schluss den Bildschriminhalt **löschen**.
 
@@ -88,8 +88,8 @@ Um nicht dauerhaft nur den Punkt auf den LEDs zu sehen, müssen wir ganz zum Sch
 
 
 _Wenn_ **Knopf B geklickt** wurde, sollen die langen Signale über Funk gesendet werden.
-Dafür wollen wir hier _erst_ die **Zahl 1** über Funk senden und anschließend folgendes Muster auf den LEDs zeigen:
-![Langes Signal](/Morse_und_Chiffren/figures/lang.png)
+Dafür wollen wir hier _erst_ die **Zahl 1** über Funk senden und anschließend folgendes Muster auf den LEDs zeigen:\
+![Langes Signal](/Morse_und_Chiffren/figures/lang.png)\
 Auch hier wollen wir mit Hilfe eines Tons überprüfen, ob unsere Eingabe auch wirklich funktioniert hat. Dafür verwenden Wir einen **Ton**, der **1/4 Schläge** dauert. Ganz zum Schluss wird der das Muster auf dem Bildschirm **gelöscht**.
 
 <details> 
@@ -127,7 +127,7 @@ Dadurch entsteht eine _neue_ Morsetabelle, mit der ihr ungehindert informationen
 
 :detective:_**Aufgabe:**_\
 Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweisübergabe fest.
-> $\purple{ Beispiel:}$ "Treffpunkt heute Abend um 19:00 Uhr am alten Glockenturm."
+> $Beispiel:$ "Treffpunkt heute Abend um 19:00 Uhr am alten Glockenturm."
 
 <details>
 <summary> Neue Morsetabelle </summary>
