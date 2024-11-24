@@ -52,7 +52,7 @@ _Hier findest du die Liste der Morse-Codes zu Buchstaben, Zahlen und anderen Zei
 </details>
 
 <details>
-<summary> Interpunktion </summary>
+<summary> Andere Zeichen </summary>
 
 | Zeichen | Morse-Code | Zeichen | Morse-Code | Zeichen | Morse-Code |
 |---------|------------|---------|------------|---------|------------|
@@ -67,8 +67,8 @@ _Hier findest du die Liste der Morse-Codes zu Buchstaben, Zahlen und anderen Zei
 </details>
 
 ## Nachrichten senden :envelope:
-Um Nachrichten zu senden müssen wir **beim Start**..
-.. eine **Funkgruppe setzen**.
+Um Nachrichten zu senden müssen wir **beim Start**..\
+.. eine **Funkgruppe setzen**.\
 .. die **Sendeleistung setzen**.
 
 Die Funkgruppe kann beliebig gewählt werden, allerdings sollte sie auf beiden Geräten übereinstimmen.
@@ -103,7 +103,7 @@ Für uns ist wichtig, dass der **kurze Ton weniger ms** hat **als der lange Ton*
 ## Nachrichten empfangen :incoming_envelope:
 
 :detective:_**Aufgabe:**_\
-Setzt den Folgenden Text im Calliope-Board um.
+Setzt den folgenden Text im Calliope-Board um.
 
 _Wenn_ wir ein **Datenpaket** über Funk **empfangen**, dann wird zwischen _2 Fällen_ unterschieden.
 Entweder die erhaltene Zahl **entspricht der Zahl 0** oder die erhaltene Zahl **entspricht der Zahl 1**.
@@ -113,7 +113,7 @@ Auf den LEDs wir **das "kurze" Muster** angezeigt und es wird ein **Ton gespielt
 _(Bitte hier auch die **wichtige Information über Töne** beachten.)_
 Anschließend wird der Inhalt des Bildschirms für weitere Zeichen wieder **gelöscht**.
 
-Das Szenario für das Empfangen der **Zahl 1** ist analog.
+Das Szenario für das Empfangen der **Zahl 1** verläuft nach dem selben Prinzip.
 
 
 
@@ -130,7 +130,10 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 > $Beispiel:$ "Treffpunkt heute Abend um 19:00 Uhr am alten Glockenturm."
 
 <details>
-<summary> Neue Morsetabelle </summary>
+<summary> Neue Morsetabellen </summary>
+
+<details> 
+<summary> Buchstaben </summary>
 
 | Buchstabe | Original Morsecode | Vertauschter Morsecode | Neuer Buchstabe |
 |-----------|--------------------|------------------------|----------|
@@ -161,6 +164,10 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 | Y         | `-.--`             | `.-..`                 | L        |
 | Z         | `--..`             | `..--`                 | غ        |
 
+</details>
+
+<details> 
+<summary> Zahlen </summary>
 
 | Zahl | Original Morsecode | Vertauschter Morsecode | Neue Zahl |
 |------|--------------------|------------------------|------|
@@ -175,7 +182,10 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 | 8    | `---..`            | `...--`               | 3    |
 | 9    | `----.`            | `....-`               | 4    |
 
+</details>
 
+<details> 
+<summary> Andere Zeichen </summary>
 
 | Zeichen | Original Morsecode | Vertauschter Morsecode | Neues Zeichen |
 |---------|--------------------|------------------------|---------|
@@ -199,16 +209,32 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 | @       | `.--.-.`           | `-..-.-`               |        |
 | ¿       | `..-.-`            | `--.-.`              | シ       |
 | ¡       | `--...-`           | `..---.`              |        |
+</details>
 
 
 </details>
 
 ## Für Interessierte: Cäsars Code :speech_balloon:
 
-Auch der große Cäsar hat damals Nachrichten verschlüsselt. Die weltweit bekannte **Cäsar Shiffre** verwendet ein System bei dem die Buchstaben im Alphabet **um 3 verschoben** werden. 
-D.h. Das A wird zu einem D, Das B zu einem E usw. Ist man am Ende des Alphabets angekommen (also bei "W wird zu Z"), fängt man **wieder am Anfang des Alphabets** an.
+Auch der große Cäsar hat damals Nachrichten verschlüsselt. Die weltweit bekannte **Cäsar Chiffre** verwendet ein System bei dem die Buchstaben im Alphabet **um 3 verschoben** werden. 
+D.h. das A wird zu einem D, Das B zu einem E usw. Ist man am Ende des Alphabets angekommen (also bei "W wird zu Z"), fängt man **wieder am Anfang des Alphabets** an.
 
-&rArr;_Falls ihr euch Fragt warum wir ausgerechnet um 3 verschieben:_
-_Das liegt daran, dass Cäsar sich dachte es sei eine hervoragende Idee den Anfangsbuchstaben seines Namens (C = der 3. Buchstabe im Alphabet) als Referenz zu nutzen. Natürlich ist dies aber irgendwann aufgeflogen._
+&rArr; _Falls ihr euch Fragt warum wir ausgerechnet um 3 verschieben:_
+_Das liegt daran, dass Cäsar sich dachte, es sei eine hervoragende Idee den Anfangsbuchstaben seines Namens (C = der 3. Buchstabe im Alphabet) als Referenz zu nutzen. Natürlich ist das aber irgendwann aufgeflogen._
 
 ![Cäsar Cipher](/Morse_und_Chiffren/figures/Caesar-Chiffre.PNG)
+
+:detective: Aufgabe:\
+Versucht folgende Nachricht zu entschlüsseln.\
+_(Hinweis: Sie enthält sowohl unsere Morse Verschlüsselung, als auch die Cäsar Chiffre)_
+
+> FΧPΧ OSVΧFΧ;
+> DGΧMMXF LΧGSΧBD VPM 5 PRG VF UΧG VSDΧF TלTSTKDRΧA。
+
+
+<details>
+<summary> Lösung! </summary>
+
+> Neue Pläne.
+> Treffen verlegt auf 0 Uhr an der alten Bibliothek!
+</details>
