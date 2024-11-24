@@ -1,10 +1,11 @@
 # Geheime Botschaften :mag: :lock: <br>_Mission: Verschlüsselte Nachrichten_
 
-London, 2024: Sherlock Holmes und ihr (Dr. Watson ist krankheitsbedingt ausgefallen) steht vor eurem bisher anspruchsvollsten Fall. Ein gestohlener Prototyp einer hochmodernen Technologie bedroht die Sicherheit des gesamten Landes.  Die ersten Beweise habt ihr bereits gefunden, doch der Fall wird kompliziert: Eine skrupellose Bande hört jeden eurer Schritte mit.
-Wenn sie herausfinden, was die ihr wisst, war’s das mit der Chance, sie zu überführen.
+St. Mary Mead, 2024:
+Miss Marple ist schon seit einiger Zeit mit einem sehr heiklen Fall beschäftigt: Ein wertvoller technischer Prototyp wurde gestohlen und die Sicherheit des Landes steht auf dem Spiel. Da sie alleine nicht weitergekommen ist, hat sie euch um Hilfe gebeten.
+Die ersten Beweise habt ihr bereits gefunden. Doch der Fall wird kompliziert, denn eine skrupellose Bande hört jeden eurer Schritte mit. In diesem brisanten Fall müssen alle Informationen sicher und geschickt verschlüsselt werden, damit sie nicht in die falschen Hände geraten. 
 
-Die Aufgabe ist klar: 
-Ihr müsst eure Nachrichten an Sherlock so verschlüsseln, dass sie selbst in den Händen der Täter unverständlich bleiben.
+Die Aufgabe ist klar:
+Eure Nachrichten an Miss Marple müssen so verschlüsselt werden, dass sie selbst in den Händen der Täter unverständlich bleiben.
 
 Ihr entschließt euch dazu eure Aufgabe mit Hilfe der Calliope-Boards zu bewältigen...
 
@@ -52,7 +53,7 @@ _Hier findest du die Liste der Morse-Codes zu Buchstaben, Zahlen und anderen Zei
 </details>
 
 <details>
-<summary> Interpunktion </summary>
+<summary> Andere Zeichen </summary>
 
 | Zeichen | Morse-Code | Zeichen | Morse-Code | Zeichen | Morse-Code |
 |---------|------------|---------|------------|---------|------------|
@@ -67,8 +68,24 @@ _Hier findest du die Liste der Morse-Codes zu Buchstaben, Zahlen und anderen Zei
 </details>
 
 ## Nachrichten senden :envelope:
-Um Nachrichten zu senden müssen wir **beim Start**..
-.. eine **Funkgruppe setzen**.
+<details>
+<summary> Liste der Bausteine für diese Aufgabe </summary>
+
+![beim Start](/_starcode_calliope_visuals//modules/grundlagen_beim_start.png)\
+![LEDs](/_starcode_calliope_visuals//modules/grundlagen_zeige_led.png)\
+![pausieren](/_starcode_calliope_visuals//modules/grundlagen_pausieren.png)\
+![bildschirm Löschen](/_starcode_calliope_visuals//modules/grundlagen_bildschirm_loeschen.png)\
+![Knopf](/_starcode_calliope_visuals//modules/eingabe_knopf.png)\
+![Ton](/_starcode_calliope_visuals//modules/musik_spiele_note.png)\
+![Funkgruppe](/_starcode_calliope_visuals//modules/funk_funkgruppe_setzen.png)\
+![Sendeleistung](/_starcode_calliope_visuals//modules/funk_sendeleistung_setzen.png)\
+![Zahl setzen](/_starcode_calliope_visuals//modules/funk_sende_zahl.png)
+
+</details>
+<br>
+
+Um Nachrichten zu senden müssen wir **beim Start**..\
+.. eine **Funkgruppe setzen**.\
 .. die **Sendeleistung setzen**.
 
 Die Funkgruppe kann beliebig gewählt werden, allerdings sollte sie auf beiden Geräten übereinstimmen.
@@ -80,7 +97,7 @@ Setzt den folgenden Text im Calliope-Board um.
 
 _Wenn_ **Knopf A geklickt** wurde, sollen die kurzen Signale über Funk gesendet werden.
 Dafür wollen wir _erst_ die **Zahl 0** über Funk senden und anschließend dieses Muster auf den LEDs zeigen:\
-![Kurzes Signal](/Morse_und_Chiffren/figures/kurz.png)\
+![Kurzes Signal](/_starcode_calliope_visuals//kurz.png)\
 Damit wir überprüfen können, ob unsere Eingabe auch wirklich geklappt hat, wollen wir unsere Eingabe mit einem **Ton hinterlegen**, der für **1/8 Schläge** hält.
 Um nicht dauerhaft nur den Punkt auf den LEDs zu sehen, müssen wir ganz zum Schluss den Bildschriminhalt **löschen**.
 
@@ -89,7 +106,7 @@ Um nicht dauerhaft nur den Punkt auf den LEDs zu sehen, müssen wir ganz zum Sch
 
 _Wenn_ **Knopf B geklickt** wurde, sollen die langen Signale über Funk gesendet werden.
 Dafür wollen wir hier _erst_ die **Zahl 1** über Funk senden und anschließend folgendes Muster auf den LEDs zeigen:\
-![Langes Signal](/Morse_und_Chiffren/figures/lang.png)\
+![Langes Signal](/_starcode_calliope_visuals//lang.png)\
 Auch hier wollen wir mit Hilfe eines Tons überprüfen, ob unsere Eingabe auch wirklich funktioniert hat. Dafür verwenden Wir einen **Ton**, der **1/4 Schläge** dauert. Ganz zum Schluss wird der das Muster auf dem Bildschirm **gelöscht**.
 
 <details> 
@@ -102,8 +119,21 @@ Für uns ist wichtig, dass der **kurze Ton weniger ms** hat **als der lange Ton*
 
 ## Nachrichten empfangen :incoming_envelope:
 
+<details>
+<summary> Liste der Bausteine für diese Aufgabe </summary>
+
+![LEDs](/_starcode_calliope_visuals//modules/grundlagen_zeige_led.png)\
+![pausieren](/_starcode_calliope_visuals//modules/grundlagen_pausieren.png)\
+![bildschirm Löschen](/_starcode_calliope_visuals//modules/grundlagen_bildschirm_loeschen.png)\
+![Wenn-Dann](/_starcode_calliope_visuals//modules/logik_wenn_dann.png)\
+![Ton](/_starcode_calliope_visuals//modules/musik_spiele_note.png)\
+![Datenpaket](/_starcode_calliope_visuals//modules/funk_datenpaket_empfangen.png)
+
+</details>
+<br>
+
 :detective:_**Aufgabe:**_\
-Setzt den Folgenden Text im Calliope-Board um.
+Setzt den folgenden Text im Calliope-Board um.
 
 _Wenn_ wir ein **Datenpaket** über Funk **empfangen**, dann wird zwischen _2 Fällen_ unterschieden.
 Entweder die erhaltene Zahl **entspricht der Zahl 0** oder die erhaltene Zahl **entspricht der Zahl 1**.
@@ -113,9 +143,7 @@ Auf den LEDs wir **das "kurze" Muster** angezeigt und es wird ein **Ton gespielt
 _(Bitte hier auch die **wichtige Information über Töne** beachten.)_
 Anschließend wird der Inhalt des Bildschirms für weitere Zeichen wieder **gelöscht**.
 
-Das Szenario für das Empfangen der **Zahl 1** ist analog.
-
-
+Das Szenario für das Empfangen der **Zahl 1** verläuft nach dem selben Prinzip.
 
 ## Nachrichten verschlüsseln :lock_with_ink_pen:
 
@@ -123,14 +151,17 @@ Da Morse ein sehr weit verbreitetes System ist, ist es auch sehr einfach zu ents
 
 Um die Täter also zu verwirren, wollen wir also ein neues System einführen, dass wie folgt aussieht:
 Die **langen Sequenzen werden kurz** und die **kurzen Sequenzen werden lang**.
-Dadurch entsteht eine _neue_ Morsetabelle, mit der ihr ungehindert informationen an Sherlock weitergeben könnt.
+Dadurch entsteht eine _neue_ Morsetabelle, mit der ihr ungehindert informationen an Miss Marple weitergeben könnt.
 
 :detective:_**Aufgabe:**_\
-Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweisübergabe fest.
+Verschickt einen Satz an Miss Marple und legt einen Zeit- und Treffpunkt zur Beweisübergabe fest.
 > $Beispiel:$ "Treffpunkt heute Abend um 19:00 Uhr am alten Glockenturm."
 
 <details>
-<summary> Neue Morsetabelle </summary>
+<summary> Neue Morsetabellen </summary>
+
+<details> 
+<summary> Buchstaben </summary>
 
 | Buchstabe | Original Morsecode | Vertauschter Morsecode | Neuer Buchstabe |
 |-----------|--------------------|------------------------|----------|
@@ -161,6 +192,10 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 | Y         | `-.--`             | `.-..`                 | L        |
 | Z         | `--..`             | `..--`                 | غ        |
 
+</details>
+
+<details> 
+<summary> Zahlen </summary>
 
 | Zahl | Original Morsecode | Vertauschter Morsecode | Neue Zahl |
 |------|--------------------|------------------------|------|
@@ -175,7 +210,10 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 | 8    | `---..`            | `...--`               | 3    |
 | 9    | `----.`            | `....-`               | 4    |
 
+</details>
 
+<details> 
+<summary> Andere Zeichen </summary>
 
 | Zeichen | Original Morsecode | Vertauschter Morsecode | Neues Zeichen |
 |---------|--------------------|------------------------|---------|
@@ -199,16 +237,45 @@ Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweis
 | @       | `.--.-.`           | `-..-.-`               |        |
 | ¿       | `..-.-`            | `--.-.`              | シ       |
 | ¡       | `--...-`           | `..---.`              |        |
+</details>
 
 
 </details>
 
 ## Für Interessierte: Cäsars Code :speech_balloon:
 
-Auch der große Cäsar hat damals Nachrichten verschlüsselt. Die weltweit bekannte **Cäsar Shiffre** verwendet ein System bei dem die Buchstaben im Alphabet **um 3 verschoben** werden. 
-D.h. Das A wird zu einem D, Das B zu einem E usw. Ist man am Ende des Alphabets angekommen (also bei "W wird zu Z"), fängt man **wieder am Anfang des Alphabets** an.
+Auch der große Cäsar hat damals Nachrichten verschlüsselt. Die weltweit bekannte **Cäsar Chiffre** verwendet ein System bei dem die Buchstaben im Alphabet **um 3 verschoben** werden. 
+D.h. das A wird zu einem D, Das B zu einem E usw. Ist man am Ende des Alphabets angekommen (also bei "W wird zu Z"), fängt man **wieder am Anfang des Alphabets** an.
 
-&rArr;_Falls ihr euch Fragt warum wir ausgerechnet um 3 verschieben:_
-_Das liegt daran, dass Cäsar sich dachte es sei eine hervoragende Idee den Anfangsbuchstaben seines Namens (C = der 3. Buchstabe im Alphabet) als Referenz zu nutzen. Natürlich ist dies aber irgendwann aufgeflogen._
+&rArr; _Falls ihr euch Fragt warum wir ausgerechnet um 3 verschieben:_
+_Das liegt daran, dass Cäsar sich dachte, es sei eine hervoragende Idee den Anfangsbuchstaben seines Namens (C = der 3. Buchstabe im Alphabet) als Referenz zu nutzen. Natürlich ist das aber irgendwann aufgeflogen._
 
-![Cäsar Cipher](/Morse_und_Chiffren/figures/Caesar-Chiffre.PNG)
+![Cäsar Cipher](/_starcode_calliope_visuals//Caesar-Chiffre.PNG)
+
+:detective: Aufgabe:\
+Versucht folgende Nachricht zu entschlüsseln.\
+_(Hinweis: Sie enthält sowohl unsere Morse Verschlüsselung, als auch die Cäsar Chiffre)_
+
+> FΧPΧ OSVΧFΧ;
+> DGΧMMXF LΧGSΧBD VPM 5 PRG VF UΧG VSDΧF TלTSTKDRΧA。
+
+
+<details>
+<summary> Lösung! </summary>
+
+<details>
+<summary> Teil1: Code zurück in Morse umwandeln </summary>
+
+> QHXH SODHQH.
+> WUHIIHQ YHUOHJW DXI 0 XKU DQ GHU DOWHQ ELEOLRWKHN!
+</details>
+
+
+<details>
+<summary> Teil2: Cäsar Chiffre entschlüsseln </summary>
+
+> Neue Pläne.
+> Treffen verlegt auf 0 Uhr an der alten Bibliothek!
+</details>
+
+</details>
