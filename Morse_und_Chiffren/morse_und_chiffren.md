@@ -1,10 +1,11 @@
 # Geheime Botschaften :mag: :lock: <br>_Mission: Verschlüsselte Nachrichten_
 
-London, 2024: Sherlock Holmes und ihr (Dr. Watson ist krankheitsbedingt ausgefallen) steht vor eurem bisher anspruchsvollsten Fall. Ein gestohlener Prototyp einer hochmodernen Technologie bedroht die Sicherheit des gesamten Landes.  Die ersten Beweise habt ihr bereits gefunden, doch der Fall wird kompliziert: Eine skrupellose Bande hört jeden eurer Schritte mit.
-Wenn sie herausfinden, was die ihr wisst, war’s das mit der Chance, sie zu überführen.
+St. Mary Mead, 2024:
+Miss Marple ist schon seit einiger Zeit mit einem sehr heiklen Fall beschäftigt: Ein wertvoller technischer Prototyp wurde gestohlen und die Sicherheit des Landes steht auf dem Spiel. Da sie alleine nicht weitergekommen ist, hat sie euch um Hilfe gebeten.
+Die ersten Beweise habt ihr bereits gefunden. Doch der Fall wird kompliziert, denn eine skrupellose Bande hört jeden eurer Schritte mit. In diesem brisanten Fall müssen alle Informationen sicher und geschickt verschlüsselt werden, damit sie nicht in die falschen Hände geraten. 
 
-Die Aufgabe ist klar: 
-Ihr müsst eure Nachrichten an Sherlock so verschlüsseln, dass sie selbst in den Händen der Täter unverständlich bleiben.
+Die Aufgabe ist klar:
+Eure Nachrichten an Miss Marple müssen so verschlüsselt werden, dass sie selbst in den Händen der Täter unverständlich bleiben.
 
 Ihr entschließt euch dazu eure Aufgabe mit Hilfe der Calliope-Boards zu bewältigen...
 
@@ -67,6 +68,22 @@ _Hier findest du die Liste der Morse-Codes zu Buchstaben, Zahlen und anderen Zei
 </details>
 
 ## Nachrichten senden :envelope:
+<details>
+<summary> Liste der Bausteine für diese Aufgabe </summary>
+
+![beim Start](/Morse_und_Chiffren/figures/modules/grundlagen_beim_start.png)
+![LEDs](/Morse_und_Chiffren/figures/modules/grundlagen_zeige_led.png)
+![pausieren](/Morse_und_Chiffren/figures/modules/grundlagen_pausieren.png)
+![bildschirm Löschen](/Morse_und_Chiffren/figures/modules/grundlagen_bildschirm_loeschen.png)
+![Knopf](/Morse_und_Chiffren/figures/modules/eingabe_knopf.png)
+![Ton](/Morse_und_Chiffren/figures/modules/musik_spiele_note.png)
+![Funkgruppe](/Morse_und_Chiffren/figures/modules/funk_funkgruppe_setzen.png)
+![Sendeleistung](/Morse_und_Chiffren/figures/modules/funk_sendeleistung_setzen.png)
+![Zahl setzen](/Morse_und_Chiffren/figures/modules/funk_sende_zahl.png)
+
+</details>
+<br>
+
 Um Nachrichten zu senden müssen wir **beim Start**..\
 .. eine **Funkgruppe setzen**.\
 .. die **Sendeleistung setzen**.
@@ -99,8 +116,27 @@ Damit Töne wahrgenommen werden können, müssen wir die Zeitdauer eines Tons fe
 Das machen wir mittels `pausiere ms("")`- Block. Mit diesem Block können wir die Anzeigedauer von Symbolen, Texten usw. einstellen. Die Länge des Tons lässt sich aus den Optionen beliebig wählen.\
 Für uns ist wichtig, dass der **kurze Ton weniger ms** hat **als der lange Ton**.
 </details>
+<br>
+<details>
+<summary> Lösung! </summary>
+
+![send msg](/Morse_und_Chiffren/figures/send_msg_lsg.png)
+</details>
 
 ## Nachrichten empfangen :incoming_envelope:
+
+<details>
+<summary> Liste der Bausteine für diese Aufgabe </summary>
+
+![LEDs](/Morse_und_Chiffren/figures/modules/grundlagen_zeige_led.png)
+![pausieren](/Morse_und_Chiffren/figures/modules/grundlagen_pausieren.png)
+![bildschirm Löschen](/Morse_und_Chiffren/figures/modules/grundlagen_bildschirm_loeschen.png)
+![Wenn-Dann](/Morse_und_Chiffren/figures/modules/logik_wenn_dann.png)
+![Ton](/Morse_und_Chiffren/figures/modules/musik_spiele_note.png)
+![Datenpaket](/Morse_und_Chiffren/figures/modules/funk_datenpaket_empfangen.png)
+
+</details>
+<br>
 
 :detective:_**Aufgabe:**_\
 Setzt den folgenden Text im Calliope-Board um.
@@ -115,7 +151,11 @@ Anschließend wird der Inhalt des Bildschirms für weitere Zeichen wieder **gel�
 
 Das Szenario für das Empfangen der **Zahl 1** verläuft nach dem selben Prinzip.
 
+<details>
+<summary> Lösung! </summary>
 
+![receive msg](/Morse_und_Chiffren/figures/receive_msg_lsg.png)
+</details>
 
 ## Nachrichten verschlüsseln :lock_with_ink_pen:
 
@@ -123,10 +163,10 @@ Da Morse ein sehr weit verbreitetes System ist, ist es auch sehr einfach zu ents
 
 Um die Täter also zu verwirren, wollen wir also ein neues System einführen, dass wie folgt aussieht:
 Die **langen Sequenzen werden kurz** und die **kurzen Sequenzen werden lang**.
-Dadurch entsteht eine _neue_ Morsetabelle, mit der ihr ungehindert informationen an Sherlock weitergeben könnt.
+Dadurch entsteht eine _neue_ Morsetabelle, mit der ihr ungehindert informationen an Miss Marple weitergeben könnt.
 
 :detective:_**Aufgabe:**_\
-Verschickt einen Satz an Sherlock und legt einen Zeit- und Treffpunkt zur Beweisübergabe fest.
+Verschickt einen Satz an Miss Marple und legt einen Zeit- und Treffpunkt zur Beweisübergabe fest.
 > $Beispiel:$ "Treffpunkt heute Abend um 19:00 Uhr am alten Glockenturm."
 
 <details>
@@ -235,6 +275,19 @@ _(Hinweis: Sie enthält sowohl unsere Morse Verschlüsselung, als auch die Cäsa
 <details>
 <summary> Lösung! </summary>
 
+<details>
+<summary> Teil1: Code zurück in Morse umwandeln </summary>
+
+> QHXH SODHQH.
+> WUHIIHQ YHUOHJW DXI 0 XKU DQ GHU DOWHQ ELEOLRWKHN!
+</details>
+
+
+<details>
+<summary> Teil2: Cäsar Chiffre entschlüsseln </summary>
+
 > Neue Pläne.
 > Treffen verlegt auf 0 Uhr an der alten Bibliothek!
+</details>
+
 </details>
