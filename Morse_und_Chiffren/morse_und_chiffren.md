@@ -71,14 +71,14 @@ _Hier findest du die Liste der Morse-Codes zu Buchstaben, Zahlen und anderen Zei
 <details>
 <summary> Liste der Bausteine für diese Aufgabe </summary>
 
-![beim Start](/Morse_und_Chiffren/figures/modules/grundlagen_beim_start.png)
-![LEDs](/Morse_und_Chiffren/figures/modules/grundlagen_zeige_led.png)
-![pausieren](/Morse_und_Chiffren/figures/modules/grundlagen_pausieren.png)
-![bildschirm Löschen](/Morse_und_Chiffren/figures/modules/grundlagen_bildschirm_loeschen.png)
-![Knopf](/Morse_und_Chiffren/figures/modules/eingabe_knopf.png)
-![Ton](/Morse_und_Chiffren/figures/modules/musik_spiele_note.png)
-![Funkgruppe](/Morse_und_Chiffren/figures/modules/funk_funkgruppe_setzen.png)
-![Sendeleistung](/Morse_und_Chiffren/figures/modules/funk_sendeleistung_setzen.png)
+![beim Start](/Morse_und_Chiffren/figures/modules/grundlagen_beim_start.png)\
+![LEDs](/Morse_und_Chiffren/figures/modules/grundlagen_zeige_led.png)\
+![pausieren](/Morse_und_Chiffren/figures/modules/grundlagen_pausieren.png)\
+![bildschirm Löschen](/Morse_und_Chiffren/figures/modules/grundlagen_bildschirm_loeschen.png)\
+![Knopf](/Morse_und_Chiffren/figures/modules/eingabe_knopf.png)\
+![Ton](/Morse_und_Chiffren/figures/modules/musik_spiele_note.png)\
+![Funkgruppe](/Morse_und_Chiffren/figures/modules/funk_funkgruppe_setzen.png)\
+![Sendeleistung](/Morse_und_Chiffren/figures/modules/funk_sendeleistung_setzen.png)\
 ![Zahl setzen](/Morse_und_Chiffren/figures/modules/funk_sende_zahl.png)
 
 </details>
@@ -116,23 +116,17 @@ Damit Töne wahrgenommen werden können, müssen wir die Zeitdauer eines Tons fe
 Das machen wir mittels `pausiere ms("")`- Block. Mit diesem Block können wir die Anzeigedauer von Symbolen, Texten usw. einstellen. Die Länge des Tons lässt sich aus den Optionen beliebig wählen.\
 Für uns ist wichtig, dass der **kurze Ton weniger ms** hat **als der lange Ton**.
 </details>
-<br>
-<details>
-<summary> Lösung! </summary>
-
-![send msg](/Morse_und_Chiffren/figures/send_msg_lsg.png)
-</details>
 
 ## Nachrichten empfangen :incoming_envelope:
 
 <details>
 <summary> Liste der Bausteine für diese Aufgabe </summary>
 
-![LEDs](/Morse_und_Chiffren/figures/modules/grundlagen_zeige_led.png)
-![pausieren](/Morse_und_Chiffren/figures/modules/grundlagen_pausieren.png)
-![bildschirm Löschen](/Morse_und_Chiffren/figures/modules/grundlagen_bildschirm_loeschen.png)
-![Wenn-Dann](/Morse_und_Chiffren/figures/modules/logik_wenn_dann.png)
-![Ton](/Morse_und_Chiffren/figures/modules/musik_spiele_note.png)
+![LEDs](/Morse_und_Chiffren/figures/modules/grundlagen_zeige_led.png)\
+![pausieren](/Morse_und_Chiffren/figures/modules/grundlagen_pausieren.png)\
+![bildschirm Löschen](/Morse_und_Chiffren/figures/modules/grundlagen_bildschirm_loeschen.png)\
+![Wenn-Dann](/Morse_und_Chiffren/figures/modules/logik_wenn_dann.png)\
+![Ton](/Morse_und_Chiffren/figures/modules/musik_spiele_note.png)\
 ![Datenpaket](/Morse_und_Chiffren/figures/modules/funk_datenpaket_empfangen.png)
 
 </details>
@@ -150,12 +144,6 @@ _(Bitte hier auch die **wichtige Information über Töne** beachten.)_
 Anschließend wird der Inhalt des Bildschirms für weitere Zeichen wieder **gelöscht**.
 
 Das Szenario für das Empfangen der **Zahl 1** verläuft nach dem selben Prinzip.
-
-<details>
-<summary> Lösung! </summary>
-
-![receive msg](/Morse_und_Chiffren/figures/receive_msg_lsg.png)
-</details>
 
 ## Nachrichten verschlüsseln :lock_with_ink_pen:
 
