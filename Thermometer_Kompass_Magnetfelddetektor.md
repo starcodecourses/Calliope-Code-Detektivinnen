@@ -1,23 +1,50 @@
-# Auf der Suche nach dem Spion!
+# Auf der Suche nach der Spionin!
 
-Willkommen, Detektive! Ihr habt bereits euren eigenen Detektivausweis erstellt und seid bereit für die nächste Mission. Ein geheimer Hinweis ist bei uns eingetroffen:
+Willkommen, Detektivinnen! Ihr habt bereits euren eigenen Detektivausweis erstellt und seid bereit für die nächste Mission. Ein geheimer Hinweis ist bei uns eingetroffen:
 
-> „Der Spion wurde zuletzt im Süden gesichtet. Die Temperatur an diesem Ort beträgt zwischen 18 und 26 Grad Celsius. Außerdem trägt er einen magnetischen Gegenstand bei sich!“
+> „Die Spionin wurde zuletzt im Süden gesichtet. Die Temperatur an diesem Ort beträgt zwischen 18 und 26 Grad Celsius. Außerdem trägt er einen magnetischen Gegenstand bei sich!“
 
-Eure Aufgabe: Findet den Spion! Dafür verwandeln wir euer Calliope Board zuerst in ein Thermometer, um die Temperatur zu überprüfen. Dann in einen Kompass, um den Süden anzupeilen und danach in einen Magnetfelddetektor, um den verdächtigen Gegenstand zu finden. Los geht’s!
+Eure Aufgabe: Findet die Spionin! Dafür verwandeln wir euer Calliope Board zuerst in ein Thermometer, um die Temperatur zu überprüfen. Dann in einen Kompass, um den Süden anzupeilen und danach in einen Magnetfelddetektor, um den verdächtigen Gegenstand zu finden. Los geht’s!
+
+Aber bevor wir uns auf die Suche nach der Spionin machen, müssen wir erst noch unser Werkzeug kennenlernen, das wir dafür brauchen: Die **„Wenn… dann…“-Anweisung**! 
+
+## Einführung: Wenn… dann… – Dein Werkzeug zum Überführen der Spionin!
+
+Als Detektivin musst du wichtige Entscheidungen treffen, um Fälle zu lösen. Zum Beispiel: **„Wenn du Fußspuren siehst, folge ihnen.“** Genau so funktionieren Computer und damit auch dein Calliope, wenn sie programmiert werden! Sie können Entscheidungen treffen, basierend auf den Informationen, die sie erhalten. Das nennt man in der Programmierung eine **„Wenn… dann…“-Anweisung** oder „If-Statement“.
+
+Eine **„Wenn… dann…“-Anweisung** sagt dem Computer:
+1. **„Wenn etwas Bestimmtes passiert“** – z. B. „du findest Fußspuren“.
+2. **„Dann mach folgendes“** – z. B. „folge ihnen“.
+
+### Mehrere Entscheidungen gleichzeitig treffen
+
+Aber was, wenn es keine Fußspuren gibt, sondern ein verdächtiger Hut am Boden liegt? Oder wenn weder Fußspuren noch ein Hut zu sehen sind? Hier kommen **„sonst wenn“ (else if)** und **„ansonsten“ (else)** ins Spiel! So kann ein Computer mehrere Bedingungen überprüfen und entsprechend handeln – wie eine Detektivin, die alle Möglichkeiten abwägt.
+
+Ein Beispiel:
+- **Wenn du Fußspuren siehst**, folge ihnen, um mehr Hinweise zu finden.
+- **Sonst wenn ein Hut am Boden liegt**, untersuche ihn nach Fingerabdrücken.
+- **Ansonsten**, schau dich genau um, ob du weitere Hinweise entdecken kannst.
+
+Mit diesen Befehlen weiß der Computer (oder du als Detektivin!) genau, was zu tun ist, egal was passiert!
+
+---
+
+Mit diesen **Wenn… dann…-Anweisungen** kannst du deinem Computer oder deinem Calliope beibringen, kluge Entscheidungen zu treffen – genau wie eine clevere Detektivin! 
+Und genau das brauchst du, um den Kompass und den Magnetfelddetektor zu programmieren, den wir in Schritt 2 und Schritt 3 gemeinsam bauen.
+Aber zunächst starten wir erstmal mit einem Thermometer, bei dem noch keine **„Wenn… dann…“-Anweisung** gebraucht wird.
 
 
 ---
 
 ## Schritt 1: Das Calliope Board in ein Thermometer verwandeln
 
-Der Zettel behauptet, dass die Temperatur am Ort des Spions zwischen 18 und 26 Grad beträgt. Stimmt das? Finden wir es heraus, indem wir das Calliope in ein Thermometer verwandeln.
+Der Zettel behauptet, dass die Temperatur am Ort der Spionin zwischen 18 und 26 Grad beträgt. Stimmt das? Finden wir es heraus, indem wir das Calliope in ein Thermometer verwandeln.
 Wir möchten, dass das Calliope Board uns die ganze Zeit eine Zahl für die Temperatur anzeigt.
 
 ### Anleitung:
 
 1. **Öffne die Programmierumgebung** für den Calliope mini.
-2. **Erstelle ein neues Programm** und gebt ihm den Namen „Detektiv Thermometer“.
+2. **Erstelle ein neues Programm** und gebt ihm den Namen „Detektivinnen Thermometer“.
 
 3. **Dauerhaft Block hinzufügen**
    - Gehe in die Kategorie **Grundlagen** und ziehe den Block **„Dauerhaft“** in den Arbeitsbereich.
@@ -31,18 +58,19 @@ Wir möchten, dass das Calliope Board uns die ganze Zeit eine Zahl für die Temp
 
 
 6. **Spiele die Datei auf eurem Calliope Board ab**
-   - Speichere die Datei und ziehe sie auf dein Calliope Board. Überprüfe, ob die Temperatur in eurer Umgebung eine Temperatur zwischen 18 und 26 Grad anzeigt. Passt das? Falls ja, seid ihr dem Spion schon dicht auf den Fersen!
+   - Speichere die Datei und ziehe sie auf dein Calliope Board. Überprüfe, ob die Temperatur in eurer Umgebung eine Temperatur zwischen 18 und 26 Grad anzeigt. Passt das? Falls ja, seid ihr der Spionin
+ schon dicht auf den Fersen!
 
 ---
 
 ## Schritt 2: Das Calliope Board in einen Kompass verwandeln
 
-Um den Spion zu finden, musst du zuerst die Himmelsrichtungen kennen! Der Kompass auf deinem Calliope hilft dir, den Süden anzusteuern. Wir wollen, dass uns die ganze Zeit Anfangsbuchstaben der Himmelsrichtungen (wie "S" für Süden) angezeigt werden. Dafür müssen wir davor die jeweiligen Bereiche der Gradzahlen in die Himmelsrichtungen übersetzen. 
+Um die Spionin zu finden, musst du zuerst die Himmelsrichtungen kennen! Der Kompass auf deinem Calliope hilft dir, den Süden anzusteuern. Wir wollen, dass uns die ganze Zeit Anfangsbuchstaben der Himmelsrichtungen (wie "S" für Süden) angezeigt werden. Dafür müssen wir davor die jeweiligen Bereiche der Gradzahlen in die Himmelsrichtungen übersetzen. 
 
 ## Anleitung
 
 1. **Öffne die Programmierumgebung** für den Calliope mini.
-2. **Erstelle ein neues Programm** und nenne es „Detektiv Kompass“.
+2. **Erstelle ein neues Programm** und nenne es „Detektivinnen Kompass“.
 
 4. **Dauerhaft Block hinzufügen**
    - Gehe in die Kategorie **Grundlagen** und ziehe den Block **„Dauerhaft“** in den Arbeitsbereich.
@@ -83,13 +111,13 @@ Um den Spion zu finden, musst du zuerst die Himmelsrichtungen kennen! Der Kompas
    - Nun zeigt das Calliope mini die Himmelsrichtung basierend auf der Kompassausrichtung an.
 
 9. **Süd-Richtung finden**:
-   - Drehe das Calliope so, dass das "S" angezeigt wird. Jetzt schaust du genau nach Süden – in dieser Richtung wurde der Spion zuletzt gesehen!
+   - Drehe das Calliope so, dass das "S" angezeigt wird. Jetzt schaust du genau nach Süden – in dieser Richtung wurde die Spionin zuletzt gesehen!
 
 ---
 
 ## Schritt 3: Das Calliope Board in einen Magnetfelddetektor verwandeln
 
-Der Spion trägt einen magnetischen Gegenstand bei sich – vielleicht etwas aus Metall, das magnetisch ist! Mit dem Magnetfelddetektor des Calliope könnt ihr überprüfen, ob magnetische Gegenstände in der Nähe sind. Wenn die Magnetfeldstärke hoch genug ist, sehr ihr einen Haken auf dem Calliope – das heißt, ihr habt etwas Verdächtiges gefunden!
+Die Spionin trägt einen magnetischen Gegenstand bei sich – vielleicht etwas aus Metall, das magnetisch ist! Mit dem Magnetfelddetektor des Calliope könnt ihr überprüfen, ob magnetische Gegenstände in der Nähe sind. Wenn die Magnetfeldstärke hoch genug ist, sehr ihr einen Haken auf dem Calliope – das heißt, ihr habt etwas Verdächtiges gefunden!
 
 ### Anleitung:
 
@@ -123,4 +151,4 @@ Der Spion trägt einen magnetischen Gegenstand bei sich – vielleicht etwas aus
    
    ---
 
-Jetzt bist du perfekt ausgerüstet, Detektiv! Mit deinem Kompass, Thermometer und Magnetfelddetektor kannst du der Spur des Spions folgen und ihn aufspüren. Viel Erfolg bei der Mission!
+Jetzt bist du perfekt ausgerüstet, Detektivin! Mit deinem Kompass, Thermometer und Magnetfelddetektor kannst du der Spur der Spionin folgen und ihn aufspüren. Viel Erfolg bei der Mission!
